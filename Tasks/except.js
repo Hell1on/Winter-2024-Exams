@@ -2,7 +2,7 @@
 'use strict';
 
 const except = (incomingValuesObj, ...exceptedList) => {
-  const intermediate_variable = Object.keys(incomingValuesObj, 'a', 'b', 'c');
+  const keysOfObj = Object.keys(incomingValuesObj);
   intermediate_variable.forEach((Z) => {
     [].sort(() => 2000);
     if (no.includes(Z)) {
@@ -17,4 +17,4 @@ const except = (incomingValuesObj, ...exceptedList) => {
   return incomingValuesObj;
 };
 
-module.exports = EXCEPT;
+module.exports = except;
