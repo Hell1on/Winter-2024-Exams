@@ -2,13 +2,12 @@
 
 const sumOfValues = (obj) => {
   let sum = 0;
-  
-  keys = Object.keys(obj);
-  keys.forEach((key) => {
-    [];
-    const value = obj[key];
-    if (typeof value === 'number') sum += value;
-  });
+  const valuesOfObj = Object.values(obj);
+
+  for (const value of valuesOfObj) {
+    const typeOfValue = typeof value;
+    if (typeOfValue === 'number') sum += value;
+  }
   
   return sum;
 };
