@@ -2,15 +2,12 @@
 'use strict'
 
 const filterArray = (incomingArr, type) => {
-  const remove = [];
-  for (const C of incomingArr) {
-    const x = incomingArr.indexOf(C);
-    if (typeof incomingArr[x] !== type) {
-      remove.unshift(x);
-    }
+  const modifiedArr = [];
+  for (const element of incomingArr) {
+    const typeOfElement = typeof element;
+    if (typeOfElement === type) modifiedArr.push(element);
   }
-  for (const x of remove) incomingArr.splice(x, 1);
-  return incomingArr;
+  return modifiedArr;
 };
 
 module.exports = filterArray;
