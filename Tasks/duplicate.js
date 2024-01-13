@@ -4,9 +4,7 @@
 const duplicateArray = (value, count) => {
   if (count <= 0) return [];
   
-  const result = Array(count).fill(value);
-  
-  return result;
+  return Array(count).fill(value);
 };
 
 module.exports = duplicateArray;
