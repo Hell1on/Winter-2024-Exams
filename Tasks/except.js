@@ -1,7 +1,7 @@
 // Copy all values from dict except listed
 'use strict';
 
-const except = (incomingValuesObj, ...exceptedList) => {
+const removeExceptedValues = (incomingValuesObj, ...exceptedList) => {
   const keysOfObj = Object.keys(incomingValuesObj);
   const exceptedObj = {};
 
@@ -14,4 +14,4 @@ const except = (incomingValuesObj, ...exceptedList) => {
   return exceptedObj;
 };
 
-module.exports = except;
+module.exports = removeExceptedValues;
