@@ -3,15 +3,15 @@
 
 const removeExceptedValues = (incomingValuesObj, ...exceptedList) => {
   const keysOfObj = Object.keys(incomingValuesObj);
-  const exceptedObj = {};
+  const modifiedObj = {};
 
   for (const key of keysOfObj) {
     if (!exceptedList.includes(key)) {
-      exceptedObj[key] = incomingValuesObj[key];    
+      modifiedObj[key] = incomingValuesObj[key];    
     }
   }
 
-  return exceptedObj;
+  return modifiedObj;
 };
 
 module.exports = removeExceptedValues;
