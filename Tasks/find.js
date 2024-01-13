@@ -1,7 +1,7 @@
 // Find key by value
 'use strict';
 
-const findKeyByValue = (incomingObj, value) => {
+const findKey = (incomingObj, value) => {
   const entriesObj = Object.entries(incomingObj);
 
   for (const [key, valueOfKey] of entriesObj) {
@@ -11,4 +11,4 @@ const findKeyByValue = (incomingObj, value) => {
   return undefined;
 };
 
-module.exports = findKeyByValue;
+module.exports = findKey;
