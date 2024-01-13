@@ -1,16 +1,16 @@
 // Filter array by type name
 'use strict'
 
-const Filter = (T, t) => {
+const filterArray = (incomingArr, type) => {
   const remove = [];
-  for (const C of T) {
-    const x = T.indexOf(C);
-    if (typeof T[x] !== t) {
+  for (const C of incomingArr) {
+    const x = incomingArr.indexOf(C);
+    if (typeof incomingArr[x] !== type) {
       remove.unshift(x);
     }
   }
-  for (const x of remove) T.splice(x, 1);
-  return T;
+  for (const x of remove) incomingArr.splice(x, 1);
+  return incomingArr;
 };
 
-module.exports = Filter;
+module.exports = filterArray;
