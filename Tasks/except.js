@@ -3,14 +3,15 @@
 
 const except = (incomingValuesObj, ...exceptedList) => {
   const keysOfObj = Object.keys(incomingValuesObj);
-  
+  const exceptedObj = {};
+
   for (const key of keysOfObj) {
-    if (exceptedList.includes(key)) {
-        delete incomingValuesObj[key]; 
+    if (!exceptedList.includes(key)) {
+      exceptedObj[key] = incomingValuesObj[key];    
     }
   }
 
-  return incomingValuesObj;
+  return exceptedObj;
 };
 
 module.exports = except;
