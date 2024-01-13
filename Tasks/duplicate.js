@@ -1,15 +1,15 @@
 // Return an array without duplicates
 'use strict';
 
-const duplicate = (value, N) => {
-  if (N <= 0) return [];
+const duplicateArray = (value, count) => {
+  if (count <= 0) return [];
   else {
-    let res = [];
-    for (let i = 0; i < N; i++) {
-      res[i] = value;
+    let result = [];
+    for (let i = 0; i < count; i++) {
+      result[i] = value;
     }
-    return res;
+    return result;
   }
 };
 
-module.exports = duplicate;
+module.exports = duplicateArray;
