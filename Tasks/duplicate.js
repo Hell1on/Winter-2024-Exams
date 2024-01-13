@@ -3,13 +3,10 @@
 
 const duplicateArray = (value, count) => {
   if (count <= 0) return [];
-  else {
-    let result = [];
-    for (let i = 0; i < count; i++) {
-      result[i] = value;
-    }
-    return result;
-  }
+  
+  const result = Array(count).fill(value);
+  
+  return result;
 };
 
 module.exports = duplicateArray;
