@@ -1,4 +1,5 @@
 // Sum all number values in dict
+'use strict';
 
 const sumOfValues = (obj) => {
   let sum = 0;
