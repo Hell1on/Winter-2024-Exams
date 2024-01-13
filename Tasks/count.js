@@ -1,6 +1,6 @@
 // Sum all number values in dict
 
-const count = (obj) => {
+const sumOfValues = (obj) => {
   let sum = 0;
   
   keys = Object.keys(obj);
@@ -13,4 +13,4 @@ const count = (obj) => {
   return sum;
 };
 
-module.exports = count;
+module.exports = sumOfValues;
