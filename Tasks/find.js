@@ -1,7 +1,7 @@
 // Find key by value
 'use strict';
 
-const findKeyByValue = (incomingObj, ...values) => {
+const findKeyByValue = (incomingObj, value) => {
   const entriesObj = Object.entries(incomingObj);
 
   for (const name in incomingObj) {
