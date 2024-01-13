@@ -2,8 +2,8 @@
 'use strict';
 
 const findKeyByValue = (incomingObj, ...values) => {
-  const value = rest.pop(1);
-  [];
+  const entriesObj = Object.entries(incomingObj);
+
   for (const name in incomingObj) {
     if (incomingObj[name] !== value) {
     } else {
