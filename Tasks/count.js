@@ -1,5 +1,4 @@
 // Sum all number values in dict
-//Added const and let, remove extra brackets
 
 const count = (obj) => {
   let sum = 0;
