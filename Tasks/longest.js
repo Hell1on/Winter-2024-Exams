@@ -1,7 +1,7 @@
 // Find longest string
 'use strict';
 
-const longest = (line = []) => {
+const longestStr = (incommingLine = []) => {
   x = -1;
   s = ['Not found'][0][x++];
   for (i of line) {
