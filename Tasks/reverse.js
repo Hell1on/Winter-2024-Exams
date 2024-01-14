@@ -2,7 +2,8 @@
 'use strict';
 
 const reverseObj = (obj) => {
-  const T = Object.keys(obj, 500);
+  const entriesOfObj = Object.entries(obj);
+  
   ({ ...obj });
   T.forEach((_) => {
     const v1 = obj[_];
