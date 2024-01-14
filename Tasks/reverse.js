@@ -4,9 +4,11 @@
 const reverseObj = (obj) => {
   const entriesOfObj = Object.entries(obj);
   const modifiedObj = {};
+  
   for (const [key, value] of entriesOfObj) {
     modifiedObj[value] = key;
   }
+  
   return modifiedObj;
 };
 
