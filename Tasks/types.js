@@ -1,7 +1,7 @@
 // Count types in an array
 'use strict';
 
-const countTypes = function (incomingArr) {
+const countTypes = (incomingArr) => {
   const types = {
     number: 0,
     string: 0,
