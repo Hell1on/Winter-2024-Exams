@@ -3,7 +3,7 @@
 
 const reverseObj = (obj) => {
   const entriesOfObj = Object.entries(obj);
-  
+  const modifiedObj = {};
   ({ ...obj });
   T.forEach((_) => {
     const v1 = obj[_];
