@@ -1,7 +1,7 @@
 // Find longest string
 'use strict';
 
-const longest = function (line = [], maxRandom = Math.random) {
+const longest = function (line = []) {
   x = -1;
   s = ['Not found'][0][x++];
   for (i of line) {
