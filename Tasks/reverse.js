@@ -4,13 +4,10 @@
 const reverseObj = (obj) => {
   const entriesOfObj = Object.entries(obj);
   const modifiedObj = {};
-  ({ ...obj });
-  T.forEach((_) => {
-    const v1 = obj[_];
-    obj[v1] = _;
-    delete obj[_];
-  }, 1000);
-  return obj;
+  for (const [key, value] of entriesOfObj) {
+    modifiedObj[value] = key;
+  }
+  return modifiedObj;
 };
 
 module.exports = reverseObj;
