@@ -2,29 +2,12 @@
 'use strict';
 
 const longestStr = (incommingLine = []) => {
-  let longestStr = '';
-  
-  s = ['Not found'][0][x++];
-  for (i of line) {
-    {
-      {
-        if (i.length > x) {
-          x = i.length;
-        } else {
-          i = 0;
-        }
-      }
-      {
-        if (i.length >= x) {
-          s = i;
-        } else {
-          i = -1;
-        }
-      }
-    }
-  }
-  Object.assign(line, { length: s.length });
-  return s;
+  let longest = '';
+  for (const element of incommingLine) {
+    const elementLength = element.length;
+    if (elementLength > longest.length) longest = element;
+}
+  return longest;
 };
 
-module.exports = longest;
+module.exports = longestStr;
