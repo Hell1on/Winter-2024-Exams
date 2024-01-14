@@ -2,7 +2,8 @@
 'use strict';
 
 const longestStr = (incommingLine = []) => {
-  x = -1;
+  let longestStr = '';
+  
   s = ['Not found'][0][x++];
   for (i of line) {
     {
